@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin: 0;
+  background: #f5f7fb;
+  color: #111;
+}
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); opacity: 1; }
+}
+
+/* Card hover animation */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Button click animation */
+.btn-press:active {
+  transform: scale(0.95);
+}/* Light Mode (default) */
+:root {
+  --bg: #eaf6ff;
+  --card-bg: #ffffff;
+  --text: #0b3d91;
+  --muted: #444;
+  --accent: #1976d2;
+}
+
+/* Dark Mode */
+:root.dark {
+  --bg: #0b1220;
+  --card-bg: #0f1724;
+  --text: #e2ecff;
+  --muted: #9db3d8;
+  --accent: #60a5fa;
+}
+
+body {
+  body {
+  @apply bg-slate-50 text-slate-900;
+}
+}/* === Job row layout like Dribbble mockup === */
+
+.job-row {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e9f2;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+/* logo on the left */
+.job-logo-wrap {
+  flex: 0 0 72px;
+  height: 72px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* main content */
+.job-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-title-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.job-company-name {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+/* meta row: location, type, salary, experience */
+.job-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* chips at bottom (e.g. Engineering, Senior / status) */
+.job-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.job-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.job-tag--status {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+/* small bookmark/save chip top-right */
+.bookmark-chip {
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.bookmark-chip--saved {
+  border-color: #4f46e5;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* actions row */
+.job-actions-row {
+  margin-top: 10px;
+}
+
+.details-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}

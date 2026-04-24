@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Frontend Developer",
+    "company": "Acme Corp",
+    "location": "Bangalore",
+    "salary": 60000,
+    "exp": 1,
+    "type": "Full-time",
+    "desc": "Work on React applications and UI components."
+  },
+  {
+    "id": "2",
+    "title": "Backend Engineer",
+    "company": "TechNova",
+    "location": "Hyderabad",
+    "salary": 75000,
+    "exp": 2,
+    "type": "Full-time",
+    "desc": "Develop backend APIs using Node.js and Express."
+  },
+  {
+    "id": "3",
+    "title": "UI/UX Designer",
+    "company": "Creative Minds",
+    "location": "Mumbai",
+    "salary": 55000,
+    "exp": 1,
+    "type": "Contract",
+    "desc": "Design modern UI layouts and user flows."
+  },
+  {
+    "id": "4",
+    "title": "Software Tester",
+    "company": "Quality Labs",
+    "location": "Chennai",
+    "salary": 45000,
+    "exp": 0,
+    "type": "Full-time",
+    "desc": "Test web applications and find bugs."
+  }
+]
